@@ -30,8 +30,8 @@ function LoginScreen({ location, history }) {
 	return (
 		<FormContainer>
 			<h1>Sign In</h1>
-			{error && <h2>Error...</h2>}
-			{loading && <h2>Loading...</h2>}
+			{/* {error && <h2>Error...</h2>}
+			{loading && <h2>Loading...</h2>} */}
 			<Form onSubmit={submitHandler}>
 				<Form.Group controlId="email">
 					<Form.Label>Email Address</Form.Label>
