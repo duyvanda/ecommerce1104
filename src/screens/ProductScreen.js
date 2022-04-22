@@ -10,8 +10,8 @@ function ProductScreen({ match }) {
 	// const product = products.find((p) => p._id == match.params.id);
 
 	const dispatch = useDispatch();
-	const productDetails = useSelector((state) => state.listProductDetails);
-	const { error, loading, product } = productDetails;
+	const productDetails = useSelector((state) => state.productDetails);
+	const { loading, error, product } = productDetails;
 	useEffect(() => {
 		dispatch(listProductDetails(match.params.id));
 	}, [dispatch]);
